@@ -1,0 +1,443 @@
+.accessory-main-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 16px auto 0;
+}
+
+.accessory-details-header {
+  width: 100%;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.accessory-details-header span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.accessory-type-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.accessory-type-form {
+  background: #F9FAFB;
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.form-header {
+  margin-bottom: 20px;
+}
+
+.form-header h3 {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Radio Buttons */
+.radio-group {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio-text {
+  font-size: 16px;
+  color: #6E6E6E;
+  transition: color 0.2s ease;
+}
+
+.radio-option.selected .radio-text {
+  color: #000000;
+  font-weight: 500;
+};
+ 
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio-text {
+  font-size: 16px;
+  color: #6E6E6E;
+}
+
+.radio-option.selected .radio-text {
+  color: #000000;
+  font-weight: 500;
+};
+  
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333333;
+}
+
+.radio-option input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  accent-color: #4A90E2;
+  
+}
+
+.radio-text {
+  font-weight: 500;
+}
+
+/* Form Rows */
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 24px;
+  align-items: end;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-group-empty {
+  visibility: hidden;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.required-indicator {
+  color: #ff0000;
+  font-weight: 500;
+  margin-left: 2px;
+}
+
+/* Form Inputs */
+.form-select,
+.form-input,
+.date-input {
+  height: 40px;
+  padding: 8px 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333333;
+  background: #ffffff;
+  width: 100%;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.select-wrapper .dropdown-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.form-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 36px;
+  background: #ffffff;
+}
+
+.default-select {
+  -webkit-appearance: default;
+  -moz-appearance: default;
+  appearance: default;
+  padding-right: 12px;
+}
+
+.form-select:focus,
+.form-input:focus,
+.date-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+}
+
+/* Calendar Input Styling */
+.date-input-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 383px;
+}
+
+.date-input {
+  position: relative;
+  cursor: pointer;
+  padding-right: 36px;
+  height: 23px;
+  width: 100%;
+  background: #ffffff;
+  
+}
+
+.calendar-icon {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 16px;
+  height: 17px;
+}
+
+/* Hide default calendar picker icon in Chrome */
+.date-input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+/* Count Input Group */
+.count-input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+  background: #ffffff;
+}
+
+.count-btn {
+  width: 32px;
+  height: 40px;
+  border: none;
+  background: #ffffff;
+  color: #666666;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.count-input {
+  flex: 1;
+  height: 40px;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  color: #3b3333;
+  background-color: #ffffff;
+}
+
+.count-input:focus {
+  outline: none;
+}
+
+/* Textarea */
+.form-textarea {
+  padding: 12px;
+  height: 90px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333333;
+  background: #ffffff;
+  resize: none;
+  font-family: inherit;
+}
+
+.form-textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+}
+
+/* Remarks Group */
+.remarks-group {
+  margin-bottom: 20px;
+}
+
+/* Add Button */
+.add-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 32px;
+}
+
+.add-btn {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Accessory Details Section */
+.accessory-details-section {
+  margin-bottom: 32px;
+}
+
+.accessory-details-section h4 {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* Table */
+.table-container {
+  overflow-x: auto;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+}
+
+.accessory-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+
+.accessory-table th {
+  background: #EFF6FF;
+  padding: 12px 8px;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 1px solid #E5E7EB;
+  white-space: nowrap;
+}
+
+.accessory-table td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #E5E7EB;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.accessory-table tbody tr:hover {
+  background: #F9FAFB;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background 0.2s;
+  color: #dc3545;
+}
+
+.delete-btn:hover {
+  background: #FEE2E2;
+  color: #b02a37;
+}
+
+/* Comment Group */
+.comment-group {
+  margin-bottom: 32px;
+}
+
+/* Submit Container */
+.submit-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* View Policies */
+.view-policies {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666666;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.file-icon {
+  color: #666666;
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .radio-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .table-container {
+    font-size: 12px;
+  }
+  
+  .accessory-table th,
+  .accessory-table td {
+    padding: 8px 4px;
+  }
+  
+  .add-button-container,
+  .submit-container {
+    justify-content: center;
+  }
+}
