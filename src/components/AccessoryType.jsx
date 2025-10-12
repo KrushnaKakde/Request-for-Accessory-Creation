@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/AccessoryType.css";
 import Vector from "./Vector";
 import RequiredInfoIcon from "./RequiredInfoIcon";
@@ -10,7 +11,8 @@ import SubmitButtonIcon from "../assets/svg/SubmitButtonIcon";
 import AddButtonIcon from "../assets/svg/AddButtonIcon";
 import FileIcon from "../assets/svg/FileIcon";
 
-const AccessoryType = ({ onSubmit }) => {
+const AccessoryType = () => {
+  const navigate = useNavigate();
   const [selectedType, setSelectedType] = useState("RAM");
   const [selectedAccessory, setSelectedAccessory] = useState("RAM - 32 GB");
   const [make, setMake] = useState("New");
@@ -68,7 +70,7 @@ const AccessoryType = ({ onSubmit }) => {
       alert('Please add at least one accessory before submitting.');
       return;
     }
-    onSubmit();
+    navigate('/2');
   };
 
   return (
@@ -98,8 +100,8 @@ const AccessoryType = ({ onSubmit }) => {
           <div className="form-group">
             <label>Select Accessory <span aria-hidden="true" className="required-indicator">*</span></label>
             <div className="select-wrapper">
-              <select 
-                value={selectedAccessory} 
+              <select
+                value={selectedAccessory}
                 onChange={(e) => setSelectedAccessory(e.target.value)}
                 className="form-select"
               >
@@ -112,8 +114,8 @@ const AccessoryType = ({ onSubmit }) => {
           </div>
           <div className="form-group">
             <label>Make</label>
-            <select 
-              value={make} 
+            <select
+              value={make}
               onChange={(e) => setMake(e.target.value)}
               className="form-select default-select"
             >
@@ -122,9 +124,9 @@ const AccessoryType = ({ onSubmit }) => {
             </select>
           </div>
           <div className="form-group">
-                        <label>Acq. Date <span aria-hidden="true" className="required-indicator">*</span></label>
+            <label>Acq. Date <span aria-hidden="true" className="required-indicator">*</span></label>
             <div className="date-input-wrapper">
-              <input 
+              <input
                 type="date"
                 value={acqDate}
                 onChange={(e) => setAcqDate(e.target.value)}
@@ -139,8 +141,8 @@ const AccessoryType = ({ onSubmit }) => {
           <div className="form-group">
             <label>Accessory Count</label>
             <div className="count-input-group">
-              <button 
-                type="button" 
+              <button
+                type="button"
                 className="count-btn"
                 onClick={() => setAccessoryCount(Math.max(0, accessoryCount - 1))}
               >
@@ -152,8 +154,8 @@ const AccessoryType = ({ onSubmit }) => {
                 onChange={(e) => setAccessoryCount(parseInt(e.target.value) || 0)}
                 className="count-input"
               />
-              <button 
-                type="button" 
+              <button
+                type="button"
                 className="count-btn"
                 onClick={() => setAccessoryCount(accessoryCount + 1)}
               >
@@ -164,8 +166,8 @@ const AccessoryType = ({ onSubmit }) => {
           <div className="form-group">
             <label>Product Status</label>
             <div className="select-wrapper">
-              <select 
-                value={productStatus} 
+              <select
+                value={productStatus}
                 onChange={(e) => setProductStatus(e.target.value)}
                 className="form-select"
               >
@@ -224,7 +226,7 @@ const AccessoryType = ({ onSubmit }) => {
                     <td>{detail.productStatus}</td>
                     <td>{detail.remarks}</td>
                     <td>
-                      <button 
+                      <button
                         className="delete-btn"
                         onClick={() => handleDelete(index)}
                       >
@@ -256,9 +258,9 @@ const AccessoryType = ({ onSubmit }) => {
           </button>
         </div>
 
-                <div className="view-policies">
+        <div className="view-policies">
           <FileIcon className="file-icon" />
-          View Policies
+          <span>View Policies</span>
         </div>
       </div>
     </div>

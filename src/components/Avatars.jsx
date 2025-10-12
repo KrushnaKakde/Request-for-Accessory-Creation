@@ -5,7 +5,7 @@ import EmployeeProfile from "./EmployeeProfile";
 import RequiredInfo from "../assets/svg/RequiredInfo";
 import AccessoryType from "./AccessoryType";
 
-const Avatars = ({ onSubmit }) => {
+const Avatars = () => {
   const handleBackClick = () => {
     console.log("Back button clicked");
   };
@@ -81,7 +81,7 @@ const Avatars = ({ onSubmit }) => {
 
       <RequiredInfo onClick={handleRequiredInfoClick} />
 
-      <AccessoryType onSubmit={onSubmit} />
+      <AccessoryType />
     </div>
   );
 };

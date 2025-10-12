@@ -1,42 +1,63 @@
-import { useState } from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar.jsx";
 import Avatars from "./components/Avatars.jsx";
 import SubmissionPage from "./components/SubmissionPage.jsx";
 import ApprovedPage from "./components/ApprovedPage.jsx";
 
-function App() {
-  const [pageState, setPageState] = useState('form'); // 'form', 'approval', 'approved'
+// Form Page Component (Route /1)
+const FormPage = () => {
+  const navigate = useNavigate();
 
   const handleSubmit = () => {
-    setPageState('approval');
+    navigate('/2');
   };
 
+  return <Avatars onSubmit={handleSubmit} />;
+};
+
+// Submission Page Component (Route /2)
+const SubmissionPageRoute = () => {
+  const navigate = useNavigate();
+
   const handleApprove = () => {
-    setPageState('approved');
+    navigate('/3');
   };
 
   const handleReject = () => {
-    setPageState('form');
-  };
-
-  const handleBackFromApproved = () => {
-    setPageState('form');
+    navigate('/1');
   };
 
   return (
+    <SubmissionPage
+      onApprove={handleApprove}
+      onReject={handleReject}
+    />
+  );
+};
+
+// Approved Page Component (Route /3)
+const ApprovedPageRoute = () => {
+  const navigate = useNavigate();
+
+  const handleBack = () => {
+    navigate('/1');
+  };
+
+  return <ApprovedPage onBack={handleBack} />;
+};
+
+function App() {
+  return (
     <>
       <Navbar />
-      {pageState === 'form' && <Avatars onSubmit={handleSubmit} />}
-      {pageState === 'approval' && (
-        <SubmissionPage 
-          onApprove={handleApprove} 
-          onReject={handleReject}
-        />
-      )}
-      {pageState === 'approved' && (
-        <ApprovedPage onBack={handleBackFromApproved} />
-      )}
+      <Routes>
+        <Route path="/1" element={<FormPage />} />
+        <Route path="/2" element={<SubmissionPageRoute />} />
+        <Route path="/3" element={<ApprovedPageRoute />} />
+        {/* Default redirect to /1 */}
+        <Route path="/" element={<FormPage />} />
+      </Routes>
     </>
   );
 }
