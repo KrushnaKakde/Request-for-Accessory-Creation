@@ -3,19 +3,24 @@ import "./App.css";
 import Navbar from "./components/Navbar.jsx";
 import Avatars from "./components/Avatars.jsx";
 import SubmissionPage from "./components/SubmissionPage.jsx";
+import ApprovedPage from "./components/ApprovedPage.jsx";
 
 function App() {
-  const [pageState, setPageState] = useState('form'); // 'form', 'approval', 'completed'
+  const [pageState, setPageState] = useState('form'); // 'form', 'approval', 'approved'
 
   const handleSubmit = () => {
     setPageState('approval');
   };
 
   const handleApprove = () => {
-    setPageState('completed');
+    setPageState('approved');
   };
 
   const handleReject = () => {
+    setPageState('form');
+  };
+
+  const handleBackFromApproved = () => {
     setPageState('form');
   };
 
@@ -29,11 +34,8 @@ function App() {
           onReject={handleReject}
         />
       )}
-      {pageState === 'completed' && (
-        <div className="completion-message">
-          <h2>Request Approved Successfully!</h2>
-          <p>The accessory request has been approved.</p>
-        </div>
+      {pageState === 'approved' && (
+        <ApprovedPage onBack={handleBackFromApproved} />
       )}
     </>
   );
