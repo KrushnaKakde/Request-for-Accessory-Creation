@@ -116,9 +116,10 @@
 /* Form Rows */
 .form-row {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   margin-bottom: 24px;
   align-items: end;
+  margin-right: 17px;
 }
 
 
@@ -260,6 +261,13 @@
   justify-content: center;
 }
 
+.count-btn svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+  flex-shrink: 0;
+}
+
 
 
 .count-input {
@@ -272,9 +280,7 @@
   background-color: #ffffff;
 }
 
-.count-input:focus {
-  outline: none;
-}
+
 
 /* Textarea */
 .form-textarea {
@@ -289,11 +295,8 @@
   font-family: inherit;
 }
 
-.form-textarea:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
-}
+
+
 
 /* Remarks Group */
 .remarks-group {

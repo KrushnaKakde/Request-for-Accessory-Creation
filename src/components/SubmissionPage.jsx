@@ -131,7 +131,12 @@ const SubmissionPage = ({ onApprove, onReject }) => {
 
         <div className="comment-section">
           <h4>Comment (Max 500 Chars)</h4>
-          <p className="comment-text">xxx-xxx-xx-xxx-x</p>
+          <textarea
+            className="comment-text"
+            defaultValue="xxx-xxx-xx-xxx-x"
+            maxLength="500"
+            rows="4"
+          ></textarea>
         </div>
 
         <div className="action-buttons">

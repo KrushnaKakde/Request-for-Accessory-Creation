@@ -15,7 +15,7 @@
   margin-top: 0px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-left: 24px;
-  margin-right: 24px;
+  margin-right: 34px;
   border-radius: 10px;
 }
 
@@ -73,16 +73,19 @@
 }
 
 .comment-text {
-  margin-right: 80px;
-  padding: 12px;
-  border: 1px solid #d0d0d0;
-  border-radius: 4px;
+  display: block;
+  width: 1338px;
+  height: 90px;
+  background: #FFFFFF;
+  border: 0.5px solid #D0D5DD;
+  border-radius: 6px;
+  padding: 25px 16px 0px;
+
+  resize: none;
   font-size: 14px;
-  color: #333333;
-  background: #ffffff;
-  resize: vertical;
+  color: black;
   font-family: inherit;
-  height: 100px;
+  margin-right: 80px;
   margin-top: 8px;
 }
 

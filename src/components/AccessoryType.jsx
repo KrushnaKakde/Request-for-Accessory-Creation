@@ -10,6 +10,8 @@ import DropdownIcon from "../assets/svg/DropdownIcon";
 import SubmitButtonIcon from "../assets/svg/SubmitButtonIcon";
 import AddButtonIcon from "../assets/svg/AddButtonIcon";
 import FileIcon from "../assets/svg/FileIcon";
+import PlusIcon from "../assets/svg/PlusIcon";
+import MinusIcon from "../assets/svg/MinusIcon";
 
 const AccessoryType = () => {
   const navigate = useNavigate();
@@ -127,10 +129,11 @@ const AccessoryType = () => {
             <label>Acq. Date <span aria-hidden="true" className="required-indicator">*</span></label>
             <div className="date-input-wrapper">
               <input
-                type="date"
+                type="text"
                 value={acqDate}
                 onChange={(e) => setAcqDate(e.target.value)}
                 className="date-input"
+                placeholder="24-May-2025"
               />
               <CalendarDropIcon className="calendar-icon" />
             </div>
@@ -146,7 +149,7 @@ const AccessoryType = () => {
                 className="count-btn"
                 onClick={() => setAccessoryCount(Math.max(0, accessoryCount - 1))}
               >
-                −
+                <MinusIcon />
               </button>
               <input
                 type="number"
@@ -159,7 +162,7 @@ const AccessoryType = () => {
                 className="count-btn"
                 onClick={() => setAccessoryCount(accessoryCount + 1)}
               >
-                +
+                <PlusIcon />
               </button>
             </div>
           </div>
@@ -187,7 +190,7 @@ const AccessoryType = () => {
           <textarea
             value={remarks}
             onChange={(e) => setRemarks(e.target.value)}
-            className="form-textarea"
+            className="comment-text"
             rows="3"
             placeholder="xxx-xxx-xx-xxx-x"
           />
@@ -245,7 +248,7 @@ const AccessoryType = () => {
           <textarea
             value={comment}
             onChange={(e) => setComment(e.target.value)}
-            className="form-textarea"
+            className="comment-text"
             rows="4"
             maxLength="500"
             placeholder="xxx-xxx-xx-xxx-x"
