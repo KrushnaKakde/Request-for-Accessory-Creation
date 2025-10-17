@@ -22,7 +22,7 @@
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 0%;
-  color: #666;
+  color: black;
   cursor: pointer;
   margin: 0;
   padding: 0;
@@ -45,7 +45,7 @@
   justify-content: center;
   width: 32px;
   height: 32px;
-  color: #333;
+  color: black;
   cursor: pointer;
   flex-shrink: 0;
 }

@@ -253,11 +253,7 @@
   margin-left: 20px;
 }
 
-.transfer-workflow:hover {
-  background: #d1f2fa;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(46, 196, 241, 0.2);
-}
+
 
 .transfer-workflow-icon {
   color: #6c5ce7;

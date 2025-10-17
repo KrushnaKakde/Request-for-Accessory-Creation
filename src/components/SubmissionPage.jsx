@@ -3,6 +3,12 @@ import '../styles/SubmissionPage.css';
 import Header from './Header';
 import EmployeeProfile from './EmployeeProfile';
 import RequiredInfo from './RequiredInfo';
+import FileIcon from '../assets/svg/FileIcon';
+import BlackIcon from '../assets/svg/BlackIcon';
+import TransferIcon from '../assets/svg/TransferIcon';
+import RejectIcon from '../assets/svg/RejectIcon';
+import ApproveButtonIcon from '../assets/svg/ApproveButtonIcon';
+import TransportArrowIcon from '../assets/svg/TransportArrowIcon';
 
 const SubmissionPage = ({ onApprove, onReject }) => {
   const handleBackClick = () => {
@@ -78,16 +84,20 @@ const SubmissionPage = ({ onApprove, onReject }) => {
         onManagerClick={handleManagerClick}
       />
 
+      <div className="request-header1">
+        <BlackIcon className="black-icon" />
+        <span>Request for Accessory Creation Details</span>
+      </div>
+
       <RequiredInfo onClick={handleRequiredInfoClick} />
 
       <div className="request-details-section">
-        <h3>Request for Accessory Creation Details</h3>
         <div className="accessory-details">
           <h4>Accessory Details</h4>
-          <table className="details-table">
+          <table className="approved-details-table">
             <thead>
               <tr>
-                <th>Accessory Type</th>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;Accessory Type</th>
                 <th>Accessory Name</th>
                 <th>Make</th>
                 <th>Acq.Date</th>
@@ -98,7 +108,7 @@ const SubmissionPage = ({ onApprove, onReject }) => {
             </thead>
             <tbody>
               <tr>
-                <td>RAM</td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;RAM</td>
                 <td>RAM - 8GB</td>
                 <td>New</td>
                 <td>24-May-2025</td>
@@ -107,7 +117,7 @@ const SubmissionPage = ({ onApprove, onReject }) => {
                 <td>xxx-xxxx-xxx-xx-xxxxx-xxx</td>
               </tr>
               <tr>
-                <td>RAM</td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;RAM</td>
                 <td>RAM - 16GB</td>
                 <td>New</td>
                 <td>24-May-2025</td>
@@ -125,18 +135,18 @@ const SubmissionPage = ({ onApprove, onReject }) => {
         </div>
 
         <div className="action-buttons">
-          <button className="reject-btn" onClick={onReject}>Reject</button>
-          <button className="approve-btn" onClick={onApprove}>Approve</button>
+          <RejectIcon onClick={onReject} />
+          <ApproveButtonIcon onClick={onApprove} />
         </div>
 
         <div className="transfer-workflow">
-          <span className="transfer-icon">↺</span>
+          <TransferIcon className="transfer-icon" />
           <span>Transfer Workflow</span>
-          <span className="arrow">›</span>
+          <TransportArrowIcon className="arrow" />
         </div>
 
         <div className="view-policies">
-          <span className="policies-icon">📄</span>
+          <FileIcon className="policies-icon" />
           <span>View Policies</span>
         </div>
       </div>

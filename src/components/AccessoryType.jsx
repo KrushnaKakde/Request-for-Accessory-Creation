@@ -205,7 +205,7 @@ const AccessoryType = () => {
             <table className="accessory-table">
               <thead>
                 <tr>
-                  <th>Accessory Type</th>
+                  <th>&nbsp;&nbsp;&nbsp;&nbsp;Accessory Type</th>
                   <th>Accessory Name</th>
                   <th>Make</th>
                   <th>Acq Date</th>
@@ -218,8 +218,8 @@ const AccessoryType = () => {
               <tbody>
                 {accessoryDetails.map((detail, index) => (
                   <tr key={index}>
-                    <td>{detail.accessoryType}</td>
-                    <td>{detail.accessoryName}</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{detail.accessoryType}</td>
+                    <td>&nbsp;{detail.accessoryName}</td>
                     <td>{detail.make}</td>
                     <td>{detail.acqDate}</td>
                     <td>{detail.accessoryCount}</td>
@@ -253,9 +253,7 @@ const AccessoryType = () => {
         </div>
 
         <div className="submit-container">
-          <button type="button" className="submit-btn" onClick={handleSubmit}>
-            <SubmitButtonIcon />
-          </button>
+          <SubmitButtonIcon className="submit-btn" onClick={handleSubmit} />
         </div>
 
         <div className="view-policies">

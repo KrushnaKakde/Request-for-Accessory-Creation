@@ -1,7 +1,8 @@
 .accessory-main-container {
   width: 100%;
-  max-width: 1400px;
-  margin: 16px auto 0;
+  max-width: 1475px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .accessory-details-header {
@@ -15,7 +16,7 @@
 .accessory-details-header span {
   font-size: 16px;
   font-weight: 500;
-  color: #333;
+  color: black;
 }
 
 .accessory-type-container {
@@ -27,9 +28,12 @@
 .accessory-type-form {
   background: #F9FAFB;
   border-radius: 8px;
-  padding: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 .form-header {
@@ -37,7 +41,7 @@
 }
 
 .form-header h3 {
-  color: #333333;
+  color: black;
   font-size: 18px;
   font-weight: 600;
   margin: 0;
@@ -60,7 +64,7 @@
 
 .radio-text {
   font-size: 16px;
-  color: #6E6E6E;
+  color: black;
   transition: color 0.2s ease;
 }
 
@@ -80,7 +84,7 @@
 
 .radio-text {
   font-size: 16px;
-  color: #6E6E6E;
+  color: black;
 }
 
 .radio-option.selected .radio-text {
@@ -94,7 +98,7 @@
   align-items: center;
   cursor: pointer;
   font-size: 14px;
-  color: #333333;
+  color: black;
 }
 
 .radio-option input[type="radio"] {
@@ -131,7 +135,7 @@
 .form-group label {
   font-size: 14px;
   font-weight: 500;
-  color: #333333;
+  color: black;
   margin-bottom: 8px;
   display: flex;
   align-items: center;
@@ -153,7 +157,7 @@
   border: 1px solid #d0d0d0;
   border-radius: 4px;
   font-size: 14px;
-  color: #333333;
+  color: black;
   background: #ffffff;
   width: 100%;
 }
@@ -264,7 +268,7 @@
   border: none;
   text-align: center;
   font-size: 14px;
-  color: #3b3333;
+  color: black;
   background-color: #ffffff;
 }
 
@@ -279,7 +283,7 @@
   border: 1px solid #d0d0d0;
   border-radius: 4px;
   font-size: 14px;
-  color: #333333;
+  color: black;
   background: #ffffff;
   resize: none;
   font-family: inherit;
@@ -294,6 +298,7 @@
 /* Remarks Group */
 .remarks-group {
   margin-bottom: 20px;
+  margin-right: 39px;
 }
 
 /* Add Button */
@@ -301,6 +306,7 @@
   display: flex;
   justify-content: flex-end;
   margin-bottom: 32px;
+  margin-right: 39px;
 }
 
 .add-btn {
@@ -316,10 +322,11 @@
 /* Accessory Details Section */
 .accessory-details-section {
   margin-bottom: 32px;
+  margin-right: 39px;
 }
 
 .accessory-details-section h4 {
-  color: #333333;
+  color: black;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 16px;
@@ -344,7 +351,7 @@
   padding: 12px 8px;
   text-align: left;
   font-weight: 600;
-  color: #374151;
+  color: #101928;
   border-bottom: 1px solid #E5E7EB;
   white-space: nowrap;
 }
@@ -352,7 +359,7 @@
 .accessory-table td {
   padding: 12px 8px;
   border-bottom: 1px solid #E5E7EB;
-  color: #333333;
+  color: black;
   background-color: #FFFFFF;
 }
 
@@ -379,6 +386,7 @@
 /* Comment Group */
 .comment-group {
   margin-bottom: 32px;
+  margin-right: 39px;
 }
 
 /* Submit Container */
@@ -386,31 +394,24 @@
   display: flex;
   justify-content: flex-end;
   margin-bottom: 20px;
+  margin-right: 35px;
 }
 
-.submit-btn {
-  padding: 0;
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 /* View Policies */
 .view-policies {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #666666;
+  color: black;
   font-size: 14px;
   cursor: pointer;
   text-decoration: none;
 }
 
 .file-icon {
-  color: #666666;
+  color: black;
   width: 20px;
   height: 20px;
 }

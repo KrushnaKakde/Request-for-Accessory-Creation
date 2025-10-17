@@ -8,19 +8,18 @@
 }
 
 .request-details-section {
-  background-color: white;
+  background-color: #F9FAFB;
   border-radius: 8px;
   padding: 24px;
-  margin-top: 0;
+  padding-left: 30px;
+  margin-top: 0px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 24px;
+  margin-right: 24px;
+  border-radius: 10px;
 }
 
-.request-details-section h3 {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 20px;
-  font-weight: 500;
-}
+
 
 .accessory-details{
   margin-right: 80px;
@@ -28,43 +27,49 @@
 
 .accessory-details h4 {
   font-size: 16px;
-  color: #666;
+  color: black;
   margin-bottom: 16px;
+  margin-top: 0px;
 }
 
-.details-table {
-  
+.approved-details-table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   margin-bottom: 24px;
-  background-color: #f8f9fa;
+  background-color: #ffffff;
+  border: 1px solid #E4E7EC;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.details-table th,
-.details-table td {
+.approved-details-table th,
+.approved-details-table td {
   padding: 12px;
   text-align: left;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #E4E7EC;
 }
 
-.details-table th {
+.approved-details-table th {
   background-color: #EFF6FF;
-  color: #666;
+  color: #101928;
   font-weight: 500;
 }
 
-.details-table td {
+.approved-details-table td {
   color: #333;
+  background-color: #ffffff;
 }
 
 .comment-section {
-  margin-top: 24px;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
 
 .comment-section h4 {
   font-size: 16px;
-  color: #666;
-  margin-bottom: 12px;
+  color: black;
+  margin-bottom: 0px;
 }
 
 .comment-text {
@@ -78,70 +83,60 @@
   resize: vertical;
   font-family: inherit;
   height: 100px;
+  margin-top: 8px;
 }
 
 .action-buttons {
   display: flex;
   justify-content: flex-end;
   gap: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   margin-right: 80px;
+  margin-top: 30px;
 }
 
 .reject-btn,
 .approve-btn {
-  padding: 8px 24px;
-  border-radius: 4px;
-  font-weight: 500;
+  
   cursor: pointer;
   border: none;
-  transition: background-color 0.2s;
+  
 }
 
 .reject-btn {
   background-color: white;
-  color: #666;
-  border: 1px solid #ddd;
+  color: black;
+  padding: 0px;
 }
 
-.approve-btn {
-  background-color: #2196f3;
-  color: white;
-}
 
-.reject-btn:hover {
-  background-color: #f5f5f5;
-}
-
-.approve-btn:hover {
-  background-color: #1976d2;
-}
 
 .request-details-section .transfer-workflow {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #666;
-  cursor: pointer;
+  color: #101928;
+  cursor: default;
   background-color: #EFF6FF;
   padding: 8px 0;
   width: auto;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+  margin-left: -30px;
+  margin-right: -24px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  border-radius: 0px;
+  font-weight: 700;
 }
 
-.request-details-section .transfer-workflow:hover {
-  background-color: #EFF6FF;
-  transform: none;
-  box-shadow: none;
-}
+
 .view-policies {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #666;
+  color: black;
   cursor: pointer;
   padding: 8px 0;
+  margin-left: 5px;
 }
 
 .transfer-icon,
@@ -150,11 +145,22 @@
   
 }
 .transfer-icon{
-  margin-left:30px;
+  margin-left:35px;
 }
 
 .arrow {
   margin-left: auto;
   font-size: 20px;
+  margin-right: 80px;
 }
 
+.request-header1{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: -5px;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 30px;
+}

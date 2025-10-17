@@ -3,6 +3,8 @@ import '../styles/ApprovedPage.css';
 import Header from './Header';
 import EmployeeProfile from './EmployeeProfile';
 import RequiredInfo from './RequiredInfo';
+import FileIcon from '../assets/svg/FileIcon';
+import BlackIcon from '../assets/svg/BlackIcon';
 
 const ApprovedPage = ({ onBack }) => {
   const handleBackClick = () => {
@@ -73,22 +75,20 @@ const ApprovedPage = ({ onBack }) => {
         onAvatarClick={handleAvatarClick}
         onNameClick={handleNameClick}
         onEmailClick={handleEmailClick}
-        onDesignationClick={handleDesignationClick}
-        onDivisionClick={handleDivisionClick}
-        onLocationClick={handleLocationClick}
-        onManagerClick={handleManagerClick}
       />
 
-      <RequiredInfo onClick={handleRequiredInfoClick} />
+      <div className="request-header">
+        <BlackIcon className="black-icon" />
+        <span>Request for Accessory Creation Report</span>
+      </div>
 
       <div className="approved-request-details-section">
-        <h3>Request for Accessory Creation Details (Approved)</h3>
         <div className="approved-accessory-details">
           <h4>Accessory Details</h4>
           <table className="approved-details-table">
             <thead>
               <tr>
-                <th>Accessory Type</th>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;Accessory Type</th>
                 <th>Accessory Name</th>
                 <th>Make</th>
                 <th>Acq.Date</th>
@@ -99,7 +99,7 @@ const ApprovedPage = ({ onBack }) => {
             </thead>
             <tbody>
               <tr>
-                <td>RAM</td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAM</td>
                 <td>RAM - 8GB</td>
                 <td>New</td>
                 <td>24-May-2025</td>
@@ -108,7 +108,7 @@ const ApprovedPage = ({ onBack }) => {
                 <td>xxx-xxxx-xxx-xx-xxxxx-xxx</td>
               </tr>
               <tr>
-                <td>RAM</td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAM</td>
                 <td>RAM - 16GB</td>
                 <td>New</td>
                 <td>24-May-2025</td>
@@ -121,10 +121,12 @@ const ApprovedPage = ({ onBack }) => {
         </div>
 
         <div className="approved-view-policies">
-          <span className="approved-policies-icon">📄</span>
+          <FileIcon className="approved-policies-icon" />
           <span>View Policies</span>
         </div>
       </div>
+
+      <RequiredInfo onClick={handleRequiredInfoClick} />
     </div>
   );
 };
