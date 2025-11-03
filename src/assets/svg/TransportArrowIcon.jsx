@@ -1,0 +1,11 @@
+import React from 'react';
+
+const TransportArrowIcon = (props) => {
+  return (
+    <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path d="M6.83784 9.5L0 2.21667L2.08108 0L11 9.5L2.08108 19L0 16.7833L6.83784 9.5Z" fill="#1D1B20"/>
+    </svg>
+  );
+};
+
+export default TransportArrowIcon;

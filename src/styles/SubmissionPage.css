@@ -1,0 +1,170 @@
+.submission-page-container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.request-details-section {
+  background-color: #F9FAFB;
+  border-radius: 8px;
+  padding: 24px;
+  padding-left: 30px;
+  margin-top: 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 24px;
+  margin-right: 34px;
+  border-radius: 10px;
+}
+
+
+
+.accessory-details{
+  margin-right: 80px;
+}
+
+.accessory-details h4 {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 16px;
+  margin-top: 0px;
+}
+
+.approved-details-table {
+  width: 1370px;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 24px;
+  background-color: #ffffff;
+  border: 1px solid #E4E7EC;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.approved-details-table th,
+.approved-details-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #E4E7EC;
+}
+
+.approved-details-table th {
+  background-color: #EFF6FF;
+  color: #101928;
+  font-weight: 500;
+}
+
+.approved-details-table td {
+  color: #333;
+  background-color: #ffffff;
+}
+
+.comment-section {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.comment-section h4 {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 0px;
+}
+
+.comment-text {
+  display: block;
+  width: 1338px;
+  height: 90px;
+  background: #FFFFFF;
+  border: 0.5px solid #D0D5DD;
+  border-radius: 6px;
+  padding: 25px 16px 0px;
+  
+
+  resize: none;
+  font-size: 14px;
+  color: black;
+  font-family: inherit;
+  margin-right: 80px;
+  margin-top: 8px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 40px;
+  margin-right: 44px;
+  margin-top: 30px;
+}
+
+.reject-btn,
+.approve-btn {
+  
+  cursor: pointer;
+  border: none;
+  
+}
+
+.reject-btn {
+  background-color: white;
+  color: black;
+  padding: 0px;
+}
+
+
+
+.request-details-section .transfer-workflow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #101928;
+  cursor: default;
+  background-color: #EFF6FF;
+  padding: 8px 0;
+  width: auto;
+  margin-left: -30px;
+  margin-right: -24px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  border-radius: 0px;
+  font-weight: 700;
+}
+
+
+.view-policies {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: black;
+  cursor: pointer;
+  padding: 8px 0;
+  margin-left: 5px;
+}
+
+.transfer-icon,
+.policies-icon {
+  font-size: 20px;
+  
+}
+.transfer-icon{
+  margin-left:35px;
+}
+
+.arrow {
+  margin-left: auto;
+  font-size: 20px;
+  margin-right: 44px;
+}
+
+.request-header1{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: -5px;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 30px;
+}
